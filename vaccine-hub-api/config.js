@@ -19,10 +19,10 @@ const dbName = process.env.DATABASE_NAME|| "vaccine_hub"
 return process.env.DATABASE_URL || `postgresql://${dbUser}:${dbPass}@${dbHost}:${dbPort}/${dbName}`
 }
 
-console.log("process.env".yellow, Object.keys(process.env))
-console.log("Vaccine Hub Config:".red)
-console.log("PORT".blue,PORT)
-console.log("Database URI:".blue, getDatabaseUri())
+// console.log("process.env", Object.keys(process.env))
+console.log("Vaccine Hub Config:")
+console.log("PORT:" ,PORT)
+console.log("Database URI:", getDatabaseUri())
 console.log("-------")
 
 module.exports = {
